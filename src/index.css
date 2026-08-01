@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ash-grey: #cad2c5ff;
+  --color-muted-teal: #84a98cff;
+  --color-deep-teal: #52796fff;
+  --color-dark-slate-grey: #354f52ff;
+  --color-charcoal-blue: #2f3e46ff;
+  --font-sans: "Roboto", "Inter", system-ui, sans-serif;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-6xl;
+}
+
+.font-caveat {
+  font-family: "Caveat", cursive;
+}
