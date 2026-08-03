@@ -16,3 +16,28 @@
 .font-caveat {
   font-family: "Caveat", cursive;
 }
+.ao-name{
+  width: 120px;
+  overflow:hidden;
+  white-space: nowrap;
+  animation: typeWriter 1s 1s both;
+  -webkit-animation: typeWriter 1s 1s steps(12) both;
+}
+/* Animation */
+@keyframes typeWriter {
+  from{
+    width: 0;
+  }
+  to{
+    width: 120px;
+  }
+}
+
+@keyframes blink {
+  from{
+    border-right-color: var(--main-color);
+  }
+  to{
+    border-right-color: transparent
+  }
+}
