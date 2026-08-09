@@ -1,43 +1,85 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ash-grey: #cad2c5ff;
-  --color-muted-teal: #84a98cff;
-  --color-deep-teal: #52796fff;
-  --color-dark-slate-grey: #354f52ff;
-  --color-charcoal-blue: #2f3e46ff;
-  --font-sans: "Roboto", "Inter", system-ui, sans-serif;
+  --color-main: #5e3bee;
+  --color-main-tag: #3e2994;
+  --color-pargraph: #595959;
+  --color-headline: #1e1e1e;
+  --font-sans: "Instrument Sans", "Inter", system-ui, sans-serif;
 }
 
 .container {
-  @apply mx-auto px-4 max-w-6xl;
+  @apply mx-auto px-4 md:px-10 max-w-6xl;
 }
 
 .font-caveat {
   font-family: "Caveat", cursive;
 }
-.ao-name{
+.ao-name {
   width: 120px;
-  overflow:hidden;
+  overflow: hidden;
   white-space: nowrap;
   animation: typeWriter 1s 1s both;
   -webkit-animation: typeWriter 1s 1s steps(12) both;
 }
+/* HERO SECTION SPECIAL BACKGROUND */
+@media (max-width: 600px) {
+  .special-bg {
+    background: radial-gradient(
+      circle at top,
+      white 50%,
+      var(--color-main-tag) 75%,
+      black 95%
+    );
+  }
+}
+@media (max-width: 750px) {
+  .special-bg {
+    background: radial-gradient(
+      circle at 50% -10%,
+      white 50%,
+      var(--color-main-tag) 75%,
+      black 95%
+    );
+  }
+}
+@media (max-width: 990px) {
+  .special-bg {
+    background: radial-gradient(
+      circle at 50% -20%,
+      white 60%,
+      var(--color-main-tag) 85%,
+      black 95%
+    );
+  }
+}
+@media (min-width: 991px) {
+  .special-bg {
+    background: radial-gradient(
+      circle at 50% -50%,
+      white 70%,
+      color-mix(in srgb, var(--color-main-tag) 30%, transparent) 75%,
+      var(--color-main-tag) 83%,
+      black
+    );
+  }
+}
+
 /* Animation */
 @keyframes typeWriter {
-  from{
+  from {
     width: 0;
   }
-  to{
+  to {
     width: 120px;
   }
 }
 
 @keyframes blink {
-  from{
+  from {
     border-right-color: var(--main-color);
   }
-  to{
-    border-right-color: transparent
+  to {
+    border-right-color: transparent;
   }
 }
