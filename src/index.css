@@ -5,7 +5,8 @@
   --color-main-tag: #3e2994;
   --color-pargraph: #595959;
   --color-headline: #1e1e1e;
-  --font-sans: "Instrument Sans", "Inter", system-ui, sans-serif;
+  --font-Instrument: "Instrument Sans", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif
 }
 
 .container {
@@ -57,14 +58,13 @@
   .special-bg {
     background: radial-gradient(
       circle at 50% -50%,
-      white 70%,
+      transparent 70%,
       color-mix(in srgb, var(--color-main-tag) 30%, transparent) 75%,
       var(--color-main-tag) 83%,
       black
     );
   }
 }
-
 /* Animation */
 @keyframes typeWriter {
   from {
