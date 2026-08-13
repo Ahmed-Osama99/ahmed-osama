@@ -1,5 +1,6 @@
 import HeroSection from './components/HeroSection.jsx'
 import Navbar from './components/Navbar.jsx'
+import Skills from './components/Skills.jsx'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection/>
+        <Skills/>
       </main>
     </>
   )

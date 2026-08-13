@@ -3,7 +3,7 @@ const HeroSection = () => {
     <section className="h-[calc(100vh-76px)] flex items-center special-bg">
       <div className="container z-10 h-fit -mt-15 flex flex-col items-center text-center justify-center">
         <p className="bg-black/5 pl-1.5 pr-4 py-2.5 rounded-full text-sm md:text-lg">
-          <span class="px-3 py-1.5 text-gray-300 bg-main-tag rounded-full">
+          <span className="px-3 py-1.5 text-gray-300 bg-main-tag rounded-full">
             Front-End Developer
           </span>{" "}
           <span className="font-medium text-sm ml-1 font-sans leading-3.5">
