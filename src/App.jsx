@@ -1,5 +1,6 @@
 import HeroSection from './components/HeroSection.jsx'
 import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection/>
+        <About/>
         <Skills/>
       </main>
     </>
