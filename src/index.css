@@ -6,7 +6,7 @@
   --color-pargraph: #595959;
   --color-headline: #1e1e1e;
   --font-Instrument: "Instrument Sans", "Inter", system-ui, sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif
+  --font-sans: "Inter", system-ui, sans-serif;
 }
 
 .container {
@@ -24,7 +24,17 @@
   -webkit-animation: typeWriter 1s 1s steps(12) both;
 }
 /* HERO SECTION SPECIAL BACKGROUND */
-@media (max-width: 600px) {
+/* Replace your existing .special-bg media queries with this */
+.special-bg {
+  background-color: #ffffff;
+  background-image: radial-gradient(
+    circle at 50% 0%,
+    #ffffff 40%,
+    color-mix(in srgb, var(--color-main) 8%, transparent) 80%,
+    color-mix(in srgb, var(--color-main) 2%, transparent) 100%
+  );
+}
+/* @media (max-width: 600px) {
   .special-bg {
     background: radial-gradient(
       circle at top,
@@ -64,6 +74,22 @@
       black
     );
   }
+} */
+.special-hover {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px ;
+    background-color: var(--color-main);
+    transition: width 0.3s;
+  }
+}
+.special-hover:hover::after {
+  width: 100%;
 }
 /* Animation */
 @keyframes typeWriter {
