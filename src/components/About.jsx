@@ -6,7 +6,7 @@ const About = () => {
       <div className="w-full relative max-w-8xl mx-auto @container rounded-2xl overflow-hidden">
         <img src={aboutImg} alt="Ahmed Osama" className="w-full" />
         
-<p 
+<p aria-hidden
           className="absolute bottom-[-24%] left-[-3%] text-[15cqw] font-bold text-center whitespace-nowrap text-transparent select-none pointer-events-none"
           style={{ WebkitTextStroke: '3px rgba(255, 255, 255, 0.4)' }}
         >

@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="relative uppercase  leading-[40%] left-[-3%] text-[13.5cqw] font-bold text-center whitespace-nowrap text-white/30 select-none pointer-events-none">
+      <p aria-hidden className="relative uppercase  leading-[40%] left-[-3%] text-[13.5cqw] font-bold text-center whitespace-nowrap text-white/30 select-none pointer-events-none">
         Ahmed Osama
       </p>
     </footer>

@@ -36,7 +36,7 @@ const Projects = () => {
       </p>
       <div className="mx-auto mt-8 gap-8 grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
         {projectsData.map((p) => (
-          <div
+          <a href={p.url} target="_blank" rel="noreferrer"
             key={p.id}
             className="bg-headline/10 shadow shadow-main-tag transform hover:-translate-y-1 hover:shadow-2xl transition-all rounded-2xl overflow-hidden"
           >
@@ -53,7 +53,7 @@ const Projects = () => {
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="hover:text-main-tag transition-colors"/>
               </a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
