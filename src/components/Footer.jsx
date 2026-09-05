@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-headline relative overflow-hidden text-white @container">
       <div className="container py-16">
         <h1 className="text-center text-4xl md:text-7xl tracking-[-2.5%] leading-16">
-          Have an idead?
+          Have an idea?
         </h1>
         <a
           href="https://wa.me/201147480962"
@@ -28,7 +28,7 @@ const Footer = () => {
               target="_blank"
               className="border-b"
             >
-              Instgram
+              Instagram
             </a>
             <a
               href="https://www.linkedin.com/in/ahmedosama-it-react/"
