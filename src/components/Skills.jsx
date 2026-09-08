@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import MarqueeImport from "react-fast-marquee";
 import reactSVG from "../assets/react.svg";
 import tailwindSVG from "../assets/tailwind.svg";
@@ -30,13 +31,28 @@ const Skills = () => {
     { src: figmaSVG, name: "Figma" },
     { src: npmSVG, name: "NPM" },
   ];
+  // Stop skills Marquee if there prefers-reduced-motion
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const motionMediaQuery = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+    const updatePrefer = () => setReducedMotion(motionMediaQuery.matches);
+
+    updatePrefer();
+
+    motionMediaQuery.addEventListener("change", updatePrefer);
+
+    return () => motionMediaQuery.removeEventListener("change", updatePrefer);
+  }, []);
 
   return (
     <section className="container py-16">
       <h2 className="text-3xl font-bold text-headline text-center mb-8">
         Skills & Tools
       </h2>
-      
+
       <div className="text-xl md:text-2xl font-bold mx-auto w-fit text-headline text-center leading-relaxed">
         <p>
           Make it
@@ -64,7 +80,15 @@ const Skills = () => {
       </div>
 
       <div className="mt-16">
-        <Marquee speed={50} gradient={true} gradientColor="white" pauseOnHover={true} className="py-4 overflow-hidden">
+        <Marquee
+          play={!reducedMotion}
+          speed={reducedMotion ? 0 : 50}
+          gradient
+          gradientColor="white"
+          pauseOnHover
+          pauseOnClick
+          className="py-4 overflow-hidden"
+        >
           {techStack.map((skill, index) => (
             <img
               key={index}
