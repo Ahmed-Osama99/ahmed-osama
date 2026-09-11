@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-headline relative overflow-hidden text-white @container">
       <div className="container py-16">
-        <h1 className="text-center text-4xl md:text-7xl tracking-[-2.5%] leading-16">
+        <h2 className="text-center text-4xl md:text-7xl tracking-tight leading-16">
           Have an idea?
-        </h1>
+        </h2>
         <a
           href="https://wa.me/201147480962"
           target="_blank"
@@ -26,6 +26,7 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/ahmed.osama.99/"
               target="_blank"
+               rel="noreferrer"
               className="border-b"
             >
               Instagram
@@ -34,6 +35,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/ahmedosama-it-react/"
               className="border-b"
               target="_blank"
+               rel="noreferrer"
             >
               LinkedIn
             </a>
@@ -41,6 +43,7 @@ const Footer = () => {
               href="https://www.upwork.com/freelancers/~01ddab436f32db0c34?mp_source=share"
               className="border-b"
               target="_blank"
+               rel="noreferrer"
             >
               Upwork
             </a>

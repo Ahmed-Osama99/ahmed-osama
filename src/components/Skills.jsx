@@ -82,7 +82,7 @@ const Skills = () => {
       <div className="mt-16">
         <Marquee
           play={!reducedMotion}
-          speed={reducedMotion ? 0 : 50}
+          speed={50}
           gradient
           gradientColor="white"
           pauseOnHover

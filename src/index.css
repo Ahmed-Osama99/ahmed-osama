@@ -3,12 +3,19 @@
 @theme {
   --color-main: #5e3bee;
   --color-main-tag: #3e2994;
-  --color-pargraph: #595959;
+  --color-paragraph: #595959;
   --color-headline: #1e1e1e;
   --font-Instrument: "Instrument Sans", "Inter", system-ui, sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
 }
-
+@layer base {
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-main);
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+}
 .container {
   @apply mx-auto px-4 md:px-10 max-w-6xl;
 }

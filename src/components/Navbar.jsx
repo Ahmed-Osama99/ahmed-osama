@@ -1,9 +1,9 @@
 const Navbar = () => {
   return (
     <header className=" container py-4 flex items-center justify-between">
-      <h1 className="ao-name font-caveat text-black text-2xl font-bold">
+      <p className="ao-name font-caveat text-black text-2xl font-bold">
         Ahmed Osama
-      </h1>
+      </p>
       <a
         href="https://wa.me/201147480962"
         rel="noreferrer"
