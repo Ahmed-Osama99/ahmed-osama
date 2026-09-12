@@ -6,7 +6,7 @@ const HeroSection = () => {
 
       {/* Added 'relative z-10' here to guarantee content stays above the orb */}
       <div className="container relative z-10 h-fit -mt-15 flex flex-col items-center text-center justify-center">
-        <p className="bg-black/5 pl-1.5 pr-4 py-2.5 rounded-full text-sm md:text-lg">
+        <p className="bg-black/5 hero-enter-1 pl-1.5 pr-4 py-2.5 rounded-full text-sm md:text-lg">
           <span className="px-3 py-1.5 inline-block text-gray-300 bg-main-tag rounded-full">
             Front-End Developer
           </span>{" "}
@@ -14,7 +14,7 @@ const HeroSection = () => {
             Hey there, I'm AHMED
           </span>
         </p>
-        <h1 className="text-2xl sm:text-5xl lg:text-7xl bg-linear-to-br from-headline to-headline/70 bg-clip-text text-transparent font-semibold mt-4">
+        <h1 className="text-2xl hero-enter-2 sm:text-5xl lg:text-7xl bg-linear-to-br from-headline to-headline/70 bg-clip-text text-transparent font-semibold mt-4">
           Building digital products,
           <br />
           brands and experiences.
@@ -22,7 +22,7 @@ const HeroSection = () => {
         <a
           href="https://wa.me/201147480962"
           rel="noreferrer"
-          className="bg-main px-4 py-2.5 rounded-full ring-4 transition-all ring-main/20 uppercase text-white mt-10"
+          className="bg-main px-4 py-2.5 hero-enter-3 rounded-full ring-4 transition-all ring-main/20 uppercase text-white mt-10"
         >
           Let's Talk
         </a>

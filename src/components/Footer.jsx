@@ -27,13 +27,13 @@ const Footer = () => {
               href="https://www.instagram.com/ahmed.osama.99/"
               target="_blank"
                rel="noreferrer"
-              className="border-b"
+              className="special-hover"
             >
               Instagram
             </a>
             <a
               href="https://www.linkedin.com/in/ahmedosama-it-react/"
-              className="border-b"
+              className="special-hover"
               target="_blank"
                rel="noreferrer"
             >
@@ -41,7 +41,7 @@ const Footer = () => {
             </a>
             <a
               href="https://www.upwork.com/freelancers/~01ddab436f32db0c34?mp_source=share"
-              className="border-b"
+              className="special-hover"
               target="_blank"
                rel="noreferrer"
             >
