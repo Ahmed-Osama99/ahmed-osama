@@ -27,8 +27,8 @@
   width: 120px;
   overflow: hidden;
   white-space: nowrap;
-  animation: typeWriter 1s 1s steps(12) both;
-  -webkit-animation: typeWriter 1s 1s steps(12) both;
+  animation: typeWriter 1s 0.5s steps(12) both;
+  -webkit-animation: typeWriter 1s 0.5s steps(12) both;
 }
 /* HERO SECTION SPECIAL BACKGROUND */
 .special-bg {

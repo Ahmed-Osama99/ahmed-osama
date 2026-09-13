@@ -47,7 +47,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             aria-label={`View ${project.title} project`}
             style={{ transitionDelay: `${index * 80}ms` }}
-            className={`group block overflow-hidden rounded-2xl bg-headline/10 shadow shadow-main-tag transition-all hover:-translate-y-1 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-main ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={`group block overflow-hidden rounded-2xl bg-headline/10 shadow shadow-main-tag transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-main ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             <div className="aspect-video overflow-hidden">
               <img

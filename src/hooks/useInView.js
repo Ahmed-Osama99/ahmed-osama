@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 
-export const useInView = (options = { threshold: 0.15 }) => {
+export const useInView = (
+  options = { threshold: 0.1, rootMargin: "0px 0px -20% 0px" },
+) => {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
   // Intentionally omit `options` to avoid unnecessary observer recreation.

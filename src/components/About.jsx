@@ -1,20 +1,31 @@
 import aboutImg from "../assets/ahmedosama.jpg";
+import { useInView } from "../hooks/useInView";
 
 const About = () => {
+  const [imageRef, imageInView] = useInView();
+  const [contentRef, contentInView] = useInView();
+
   return (
     <section className="container py-16">
-      <div className="w-full relative max-w-8xl mx-auto @container rounded-2xl overflow-hidden">
+      <div
+        ref={imageRef}
+        className={`w-full relative max-w-8xl mx-auto @container rounded-2xl overflow-hidden transition-all duration-700 ${imageInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+      >
         <img src={aboutImg} alt="Ahmed Osama" className="w-full" />
-        
-<p aria-hidden
+
+        <p
+          aria-hidden
           className="absolute bottom-[-24%] left-[-3%] text-[15cqw] font-bold text-center whitespace-nowrap text-transparent select-none pointer-events-none"
-          style={{ WebkitTextStroke: '3px rgba(255, 255, 255, 0.4)' }}
+          style={{ WebkitTextStroke: "3px rgba(255, 255, 255, 0.4)" }}
         >
           A bit about me
         </p>
       </div>
-      
-      <div className="mt-12 flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-between">
+
+      <div
+        ref={contentRef}
+        className={`mt-12 flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-between transition-all duration-700 ${contentInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+      >
         <div className="max-w-2xl">
           <h2 className="text-2xl font-bold text-headline">Beyond the Code</h2>
           <p className="mt-4 text-headline/90">
