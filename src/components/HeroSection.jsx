@@ -22,7 +22,7 @@ const HeroSection = () => {
         <a
           href="https://wa.me/201147480962"
           rel="noreferrer"
-          className="bg-main px-4 py-2.5 hero-enter-3 rounded-full ring-4 transition-all ring-main/20 uppercase text-white mt-10"
+          className="bg-main px-4 py-2.5 hero-enter-3 rounded-full ring-4 hover:inset-shadow-black/70 hover:inset-shadow-sm transition-all ring-main/20 uppercase text-white mt-10"
         >
           Let's Talk
         </a>

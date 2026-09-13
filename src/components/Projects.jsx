@@ -3,8 +3,11 @@ import kaira from "../assets/kaira.jpg";
 import dashstack from "../assets/dashstack.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { useInView } from "../hooks/useInView";
 
 const Projects = () => {
+  const [ref, inView] = useInView();
+
   const projectsData = [
     {
       id: 1,
@@ -35,14 +38,16 @@ const Projects = () => {
         Real interfaces. Real problems. Thoughtfully engineered.
       </p>
       <div className="mx-auto mt-8 gap-8 grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
-        {projectsData.map((project) => (
+        {projectsData.map((project, index) => (
           <a
+            ref={ref}
             key={project.id}
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`View ${project.title} project`}
-            className="group block overflow-hidden rounded-2xl bg-headline/10 shadow shadow-main-tag transition-all hover:-translate-y-1 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-main"
+            style={{ transitionDelay: `${index * 80}ms` }}
+            className={`group block overflow-hidden rounded-2xl bg-headline/10 shadow shadow-main-tag transition-all hover:-translate-y-1 hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-main ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             <div className="aspect-video overflow-hidden">
               <img
